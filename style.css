@@ -22,9 +22,18 @@ section{
 }
 
 header{
-    position: sticky;
     top: 0;
     left: 0;
     background-color: #fff;
+
+}
+
+#carousel-ex{
     border-bottom: 5px solid rgb(24, 24, 103);
+    border-top: 5px solid rgb(24, 24, 103);
+}
+
+.card{
+    width: 400px;
+
 }
