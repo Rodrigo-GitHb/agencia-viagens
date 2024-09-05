@@ -3,37 +3,58 @@
     object-fit: cover;
 }
 
-img {
-    vertical-align: middle;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-.navbar-nav .nav-link.active{
-    color: #fff;
+html, body {
+    overflow-x: hidden;
+    height: 100%;
 }
 
-.nav-link{
-    text-align: center;
+
+.container {
+    padding: 20px;
 }
 
-section{
-    height: 100vh;
-    background-color: #fff;
-    padding-top: 120px;
+.row {
+    margin: 0 auto;
 }
 
-header{
-    top: 0;
-    left: 0;
-    background-color: #fff;
-
+.card {
+    height: 100%;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
 }
 
-#carousel-ex{
-    border-bottom: 5px solid rgb(24, 24, 103);
-    border-top: 5px solid rgb(24, 24, 103);
+.card:hover {
+    transform: scale(1.05);
 }
 
-.card{
-    width: 400px;
+.card-img-top {
+    object-fit: cover;
+    height: 200px;
+}
 
+
+@media (max-width: 576px) {
+    .row {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
+
+@media (min-width: 577px) and (max-width: 768px) { 
+    .row {
+        gap: 1rem; 
+    }
+}
+
+@media (min-width: 769px) {
+    .row {
+        gap: 1.5rem;
+    }
 }
